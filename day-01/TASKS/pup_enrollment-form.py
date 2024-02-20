@@ -1,15 +1,14 @@
-# Write the code ↓ to read user's input.
-# Be cautious when reading input of various data types.
+print('PUP Enrollment Form')
+#Data Input
+full_name = input("Enter your full name: ")
+age = input("Enter your age: ")
+gwa = input("Enter your previous general weighted average: ")
+is_cloudMember = input("Are you a member of AWS Cloud Club? (yes/no): ").lower() == "yes"
 
-
-
-
-
-
-# Write the code ↓ to display the user's personal information.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
-
+print("")
+#Output
+print("Your Enrollment Form")
+print("Name: " + full_name)
+print("Age: " + age)
+print("GWA: " + gwa)
+print("Awstraunot: ", is_cloudMember)

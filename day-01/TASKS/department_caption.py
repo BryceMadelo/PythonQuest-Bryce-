@@ -1,15 +1,13 @@
-# Template for department's caption
-""" 🚀Deploying...I'm <𝗡𝗮𝗺𝗲>, representing the <𝗗𝗲𝗽𝗮𝗿𝘁𝗺𝗲𝗻𝘁>. I'm thrilled to commence our expedition into the vast and uncharted realm of the <𝗚𝗮𝗹𝗮𝘅𝘆>. Together, we'll navigate this exciting frontier of technology! 🌌🌟💻 """
+#user name
+name = input("Enter your name: ")
 
-# Write the code ↓ to read user's input.
+#AWS CLoud Club Department
+department = input("Enter the AWS Cloud Clud department you belong: ")
 
+#Galaxy
+galaxy = input("Specify the galaxy you belong: ")
 
-
-
-
-# Write the code ↓ to display the department's caption.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
+print("Your Department's DP Blast Caption:")
+#Output
+dpBlast = " 🚀Deploying...I'm {}, representing the department of {}. I'm thrilled to commence our expedition into the vast and uncharted realm of the {} Galaxy. Together, we'll navigate this exciting frontier of technology! 🌌🌟💻 ".format(name, department, galaxy)
+print(dpBlast)
