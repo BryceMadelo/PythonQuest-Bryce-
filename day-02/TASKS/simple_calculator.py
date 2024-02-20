@@ -1,29 +1,32 @@
-# Write the code ↓ to read user's input for two operands and selected operation.
-# NOTE: The two operands must be read as floats.
+print("SIMPLE CALCULATOR FOR ALF")
+print("")
+#Enter Operand
+first_number = float(input("Enter the first number: "))
+second_number = float(input("Enter the second number: "))
 
+#Enter Operator
+operator = input("Enter the Operator (+, -, *, /): ")
 
+#Result
+output = 0
 
+if operator == "+":
+    output = first_number + second_number
+elif operator == "-":
+    output = first_number - second_number
+elif operator == "*":
+    output = first_number * second_number
+elif operator == "/":
 
+    if second_number != 0:
+        output = first_number / second_number
+    else:
+        print("")
+        print("Error: Division by zero is not allowed.")
+        
+else:
+    print("Invalid operation.")
 
-
-
-
-
-# Write the code ↓ to perform the calculations based on the selected operation.
-
-
-
-
-
-
-
- 
-# Write the code ↓ to display the result.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
-
-
-
+print("")
+if operator in ["+", "-", "*"]:
+    print("The result of ", first_number, operator, second_number, "is ", output)
