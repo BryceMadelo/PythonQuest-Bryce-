@@ -1,27 +1,24 @@
-# Write the code ↓ to prompt the user to enter a word.
-# Be cautious when reading input of various data types.
+print("VOWEL COUNTER FOR ALF")
+print("")
+
+#Input
+while True:
+    word = input("Please, enter a word/s to check: ")
+    if word.isalpha():
+        break
+    else:
+        print("")
+        print("Please, enter letters only.")
+        print("")
+
+vowels_counter = 0
+vowels = 'aeiou'
+
+for letter in word.lower():
+    if letter in vowels:
+        vowels_counter += 1
 
 
-
-
-
-
-
-
-# Write the code ↓ to count the number of vowels in the entered word.
-# Utilize string functions to iterate through the characters and identify vowels.
-
-
-
-
-
-
-
-# Write the code ↓ to display the count of vowels in the word.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-        
-
-
-
-
-
+#Output
+print("")
+print(f"The number of vowels in '{word}' is: {vowels_counter}")
